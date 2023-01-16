@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3a3b9ce072c04c6d98f1f0f75f1d6b1c" Name="Diagram1" >
+        <EntityTypeShape EntityType="ERDiaModel.Content" Width="1.5" PointX="6.625" PointY="0.5" />
+        <EntityTypeShape EntityType="ERDiaModel.Person" Width="1.5" PointX="6.125" PointY="4" />
+        <EntityTypeShape EntityType="ERDiaModel.Course" Width="1.5" PointX="3.875" PointY="0.875" />
+        <EntityTypeShape EntityType="ERDiaModel.Author" Width="1.5" PointX="3.5" PointY="4.125" />
+        <EntityTypeShape EntityType="ERDiaModel.Content_Rating" Width="1.5" PointX="9.25" PointY="0.625" />
+        <EntityTypeShape EntityType="ERDiaModel.Content_Comments" Width="1.5" PointX="10" PointY="3.25" />
+        <EntityTypeShape EntityType="ERDiaModel.Course_Comments" Width="1.5" PointX="9.375" PointY="5.875" />
+        <AssociationConnector Association="ERDiaModel.CourseContent" />
+        <AssociationConnector Association="ERDiaModel.ContentContent_Rating" />
+        <AssociationConnector Association="ERDiaModel.PersonContent_Comments" />
+        <AssociationConnector Association="ERDiaModel.ContentContent_Comments" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="ERDiaModel.CourseCourse_Comments" />
+        <AssociationConnector Association="ERDiaModel.CourseAuthor" />
+        <AssociationConnector Association="ERDiaModel.CoursePerson" />
+        <AssociationConnector Association="ERDiaModel.PersonContent_Rating" />
+        <AssociationConnector Association="ERDiaModel.PersonCourse_Comments" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
